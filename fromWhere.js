@@ -12,14 +12,19 @@ function fromWhere(regNo) {
     }
 }
 describe('this should test the fromWhere function', function () {
-    it('fromWhere', function () {
+    it('should tell us where we from if we have', function () {
 
         assert.equal(fromWhere('CY'), 'Bellville');
+    });
+    it('fromWhere', function () {
+
         assert.equal(fromWhere('CJ'), 'Paarl');
+    });
+    it('fromWhere', function () {
         assert.equal(fromWhere('CA'), 'Cape Town');
+    });
+    it('fromWhere', function () {
         assert.equal(fromWhere('CC'), 'Some other place!');
-
-
     });
 
 });

@@ -4,9 +4,13 @@ function greet(neighboursName) {
 }
 
 describe('this should test the greet function', function () {
-    it('greet', function () {
+    it('Should greet bob', function () {
         assert.equal(greet('Bob'), 'Hello, Bob');
-        assert.equal(greet('Sam'), 'Hello, Sam');
+       
     });
+    it('Should greet Sam', function () {
+         assert.equal(greet('Sam'), 'Hello, Sam');
+    });
+
 
 });

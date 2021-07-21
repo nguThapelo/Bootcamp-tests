@@ -5,9 +5,13 @@ function yearsAgo(year) {
 
 
 describe('this should test the yearsAgo function', function () {
-    it('yearsAgo', function () {
+    it('should tell us how many years ago, 1976 was from the present year', function () {
         assert.equal((new Date().getFullYear() - 1976), yearsAgo(1976))
-        assert.equal((new Date().getFullYear() - 2000), yearsAgo(2000));
+       
+    });
+    it('should tell us how many years ago, 2000 was from the present year', function () {
+        assert.equal((new Date().getFullYear() - 1976), yearsAgo(1976))
+        
     });
 
 });
