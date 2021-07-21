@@ -1,6 +1,4 @@
-function countRegNumber(regNo) {
-    return regNo.split(",").length;
-};
+
 
 describe('this should test the countRegNumber function', function () {
     
@@ -17,3 +15,7 @@ it('Should return 1 when the string "CA 182736" is passed as input', function ()
     });
 
 });
+
+function countRegNumber(regNo) {
+    return regNo.split(",").length;
+};

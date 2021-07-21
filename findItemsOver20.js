@@ -31,18 +31,10 @@ var results3 = [
     { name: 'bananas', qty: 23 },
     { name: 'apples', qty: 37 }
 ];
-function findItemsOver20(itemList) {
-    let newList = [];
-    for (var i = 0; i < itemList.length; i++) {
-        if (itemList[i].qty > 20) {
-            newList.push(itemList[i]);
-        }
-    } return newList;
-}
 
 
 describe('this should test the finditemsOver20 function', function () {
-    it('should find items that are over 20 when item List 3 is passed as input', function () {
+    it('should find items that are over 20 when item List is passed as input', function () {
 
         assert.deepEqual(results, findItemsOver20(itemList));
        
@@ -51,7 +43,7 @@ describe('this should test the finditemsOver20 function', function () {
 
 
     });
-     it('should find items that are over 20 when item List 3 is passed as input', function () {
+     it('should find items that are over 20 when item List 2 is passed as input', function () {
 
         assert.deepEqual(results2, findItemsOver20(itemList2));
 
@@ -69,4 +61,13 @@ describe('this should test the finditemsOver20 function', function () {
 
     });
 
-});
+}); 
+
+function findItemsOver20(itemList) {
+    let newList = [];
+    for (var i = 0; i < itemList.length; i++) {
+        if (itemList[i].qty > 20) {
+            newList.push(itemList[i]);
+        }
+    } return newList;
+}

@@ -1,8 +1,3 @@
-
-function greet(neighboursName) {
-    return "Hello, " + neighboursName;
-}
-
 describe('this should test the greet function', function () {
     it('Should greet bob', function () {
         assert.equal(greet('Bob'), 'Hello, Bob');
@@ -14,3 +9,8 @@ describe('this should test the greet function', function () {
 
 
 });
+
+function greet(neighboursName) {
+    return "Hello, " + neighboursName;
+}
+

@@ -1,6 +1,4 @@
-function isFromBellville(regNo) {
-    return (regNo.includes("CY"))
-}
+
 
 describe('this should test the isFromBelville function', function () {
     it('should return TRUE if reg starts with CY', function () {
@@ -14,3 +12,7 @@ describe('this should test the isFromBelville function', function () {
     });
 
 });
+
+function isFromBellville(regNo) {
+    return (regNo.includes("CY"))
+}

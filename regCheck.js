@@ -1,7 +1,3 @@
-function regCheck(regNo, regEnds) {
-    return (regNo.endsWith(regEnds));
-}
-
 describe('this should test the regCheck function', function () {
     it('should return TRUE if registration number that ends with GP is passed as input', function () {
         assert.equal(regCheck('DC 55 YU GP', 'GP'), true);
@@ -29,3 +25,7 @@ describe('this should test the regCheck function', function () {
     });
 
 });
+
+function regCheck(regNo, regEnds) {
+    return (regNo.endsWith(regEnds));
+}

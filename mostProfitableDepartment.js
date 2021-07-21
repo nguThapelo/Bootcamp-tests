@@ -38,6 +38,28 @@ var salesData2 = [
     { department: 'carpentry', sales: 8009, day: 'Wednesday' },
 ];
 
+
+
+
+describe('this should test the mostProfitableDepartment function', function () {
+    it('should give us the most profitable department when sales data is passed as input', function () {
+
+        assert.equal('outdoor', mostProfitableDepartment(salesData), "Most profitable department is 'outdoor' for dataset 1");
+
+
+
+    });
+
+    it('should give us the most profitable department when sales data 2 is passed as input', function () {
+
+        assert.equal('electronics', mostProfitableDepartment(salesData2), "Most profitable department is 'electronics' for dataset 2");
+
+
+
+    });
+
+});
+
 function mostProfitableDepartment(salesData) {
     var salesMap = {};
     for (var i = 0; i < salesData.length; i++) {
@@ -62,24 +84,3 @@ function mostProfitableDepartment(salesData) {
     }
     return curDept;
 }
-
-
-
-describe('this should test the mostProfitableDepartment function', function () {
-    it('should give us the most profitable department when sales data 2 is passed as input', function () {
-
-        assert.equal('outdoor', mostProfitableDepartment(salesData), "Most profitable department is 'outdoor' for dataset 1");
-
-
-
-    });
-
-    it('should give us the most profitable department when sales data 2 is passed as input', function () {
-
-        assert.equal('electronics', mostProfitableDepartment(salesData2), "Most profitable department is 'electronics' for dataset 2");
-
-
-
-    });
-
-});
