@@ -42,11 +42,17 @@ function findItemsOver(itemName, threshold) {
 }
 
 describe('this should test the finditemsOver function', function () {
-    it('finditemsOver', function () {
+    it('should find items that are over when item List is passed as input', function () {
 
         assert.deepEqual(results, findItemsOver(itemList, 20));
+        
+    });
+it('should find items that are over when item List 2 is passed as input', function () {
+
         assert.deepEqual(results2, findItemsOver(itemList2, 20));
+    });
+    it('should find items that are over when item List 3 is passed as input', function () {
+
         assert.deepEqual(results3, findItemsOver(itemList3, 20));
     });
-
 });
